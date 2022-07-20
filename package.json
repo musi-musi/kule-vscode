@@ -1,7 +1,8 @@
 {
     "name": "kule",
-    "displayName": "kule-vscode",
+    "displayName": "kule shader language",
     "description": "language support for the kule shader language",
+    "publisher": "musi musi",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.69.0"
@@ -9,10 +10,15 @@
     "categories": [
         "Programming Languages"
     ],
+    "icon": "./icon.png",
     "contributes": {
         "languages": [
             {
                 "id": "kule",
+                "icon": { 
+                    "dark": "./icon.png",
+                    "light": "./icon.png"
+                },
                 "aliases": [
                     "kule",
                     "kule"
@@ -30,8 +36,5 @@
                 "path": "./syntaxes/kule.tmLanguage.json"
             }
         ]
-    },
-    "devDependencies": {
-        "js-yaml": "^4.1.0"
     }
 }
