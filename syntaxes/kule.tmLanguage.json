@@ -16,7 +16,7 @@
     },
   "keywords": {
     "name": "keyword.control.kule",
-    "match": "\\b(module|pub)\\b"
+    "match": "\\b(module|pub|as)\\b"
   },
   "numbers": {
     "patterns": [
