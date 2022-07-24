@@ -17,6 +17,7 @@
     ],
     "icon": "./extension_icon.png",
     "activationEvents": [
+        "workspaceContains:**.kule",
         "onLanguage:kule"
     ],
     "main": "./out/extension.js",
@@ -66,10 +67,10 @@
             "type": "object",
             "title": "kule",
             "properties": {
-                "kule.path": {
+                "kule.serverPath": {
                     "scope": "resource",
-                    "title": "kule executable path",
-                    "description": "Path to kule executable",
+                    "title": "kule language server executable path",
+                    "description": "Path to kule language server executable",
                     "type": "string",
                     "format": "path"
                 }
