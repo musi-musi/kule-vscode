@@ -38,7 +38,7 @@ export function activate(context: ExtensionContext) {
 }
 
 function config() {
-  return workspace.getConfiguration();
+  return workspace.getConfiguration("kule");
 }
 
 function clientIsRunning(): boolean {
@@ -73,7 +73,7 @@ function startClient(): Promise<void> {
       "kule",
       "kule Language Server",
       {
-        command: config().get("path", "kule-server"),
+        command: config().get("serverPath", "kule-server"),
       },
       {
         documentSelector: [{ scheme: "file", language: "kule" }],
